@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR PENDAFTARAN</title>
+    <style>
+        h1{
+            background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(8, 8, 8) ) ;
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+          font-size: larger;
+        }
+        p{
+            font-size: medium;
+            font-style: normal;
+           
+        }
+        img{
+            width: 100%;
+            height: 30vh;
+            
+        }
+        wrapper{
+          width: 100%;
+          height: 300vh;
+          display: ruby-text-container;
+          align-items: center;
+          justify-content: center;
+      }
+      child{
+          display: ruby-text-container;
+          flex-direction:row;
+          align-items: center;
+          justify-content: center;
+      }
+      body{
+        font-style:normal;
+        background-image: linear-gradient(to right, rgb(107, 16, 61) ) ;
+          -webkit-background-clip:content-box;
+          -webkit-text-fill-color:rgb(0, 0, 0);
+          
+      }
+      tr{
+      
+        font-style: normal;
+
+      }
+      td {
+        font-size: medium;
+            font-style:normal;
+            outline-color: darkslategrey;
+           
+            
+      }
+      table{
+        border-style:groove;
+        color: black;
+        width: 100%;
+        height: 50vh;
+      }
+      .row{
+            display:flex;
+            justify-content:center;
+            margin-top:1rem;
+         }
+        .mr-2{
+           margin-right: 0.5rem;
+        }
+ 
+        /* css button */
+       .href{
+           font-family: sans-serif;   //mengatur jenis font
+           font-size: 1em;   //mengatur ukuran font
+           background: tan;  //mengatur warna background
+           color: blue;  //mengatur warna font
+           border: white 0.2rem solid; //mengatur border atau garis tepi button
+           border-radius: 0.5rem; //mengatur radius garis tepi button
+           padding: 0.8rem 1.8rem; //mengatur jarak padding button
+           margin-top: 1rem; //mengatur jarak margin bagian atas button
+           text-decoration:none;  //menghilangkan garis bawah pada link 
+       }
+      /* memberi efek hover pada button */
+      .btn:hover{
+          opacity:0.9;
+      }
+</style>
+   
+    </style> 
+      <img src="kop surat.jpeg" alt="kop" width:"100%" height:"30vh" border="0/>
+      
+      <h1 style="text-align: center;">FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+      <p style="text-align: left;">PETUNJUK PENGISIAN</p>
+      <p style="text-align: left;">
+          1. Isilah data dengan cermat, teliti dan benar</p>
+       <p   >2. Isilah Menggunakan Huruf Kapital</p>
+      <p >3.Salah penulisan pada pengisian formulir ini akan berakibat fatal pada penulisan data teman-teman di ijazah</p>
+</head>
+
+<body>
+    <body bgcolor="white">
+    
+    <table>
+
+        <tr>
+        <td>1.Nomor pendaftaran</td>
+        <td>:</td>
+        <td><input type="text"></td>
+        </tr>
+        
+        <tr>
+        <td>2.Nama lengkap</td>
+        <td>:</td>
+        <td><input type="text"></td>
+        </tr>
+        
+        <tr>
+        <td>3.Tanggal Ujian</td>
+        <td>:</td>
+        <td><input type="Date"></td>
+        </tr>
+        
+        <tr>
+        <td>4.Jenis Kelamin</td>
+        <td>:</td>
+        <td><input type="radio" name='jenis_kelamin' value='pria'/>Pria
+        <input type="radio" name='jenis_kelamin' value='perempuan'/>Perempuan</td>
+        </tr>
+        
+        <tr>
+            <td>5. jenjang studi</td>
+            <td>:</td>
+            <td><select>
+                <option>D III reguler (akuntansi )</option>
+                <option>D III reguler( manajemen perusahaan)</option>
+                <option>D III karyawan (akuntansi )</option>
+                <option>D III karyawan( manajemen perusahaan)</option>
+                <option>S 1 reguler (akuntansi)</option>
+                <option>S 1 reguler (manajemen)</option>
+                <option>S 1 karyawan (akuntansi)</option>
+                <option>S 1 karyawan (manajemen)</option>
+        </tr>
+
+        <tr>
+            <td>waktu kuliah</td>
+            <td>:</td>
+            <td><select>
+                <option>pagi</option>
+                <option>sore</option>
+                <option>malam</option>
+        </tr>
+        <tr>
+            <td>ukuran jaket</td>
+            <td>:</td>
+            <td><select>
+                <option>small</option>
+                <option>medium</option>
+                <option>large</option>
+                <option>extra large</option>
+        </tr>
+        <tr>
+            <td>sistem pembayaran</td>
+            <td>:</td>
+            <td><select>
+                <option>angsuran</option>
+                <option>tunai</option>
+        </tr>
+            
+    </table>    
+
+    <form action="data pribadi" method="POST">
+        <fieldset>
+        <legend>data pribadi</legend>
+        
+        <p>
+            <label>6. agama</label>
+            <label>:</label>
+            <input type="text"/>
+        </p>
+        <p>
+            <label>7. tempat </label>
+            <label>:</label>
+            <input type="text"/>
+        </p>
+        <p>
+            <label>tanggal lahir</label>
+            <input type="date"/>
+        </p>
+        <p>
+            <label>8. alamat rumah</label>
+            <label>:</label>
+            <input type="text">
+            
+        </p>
+        <p>
+            <label>kota</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>kode pos</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>9. no telepon</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>10. kewarganegaraan</label>
+            <label>:</label>
+            <input type="checkbox">WNI</input>
+            <input type="checkbox">WNA</input>
+        </p>
+        <p>
+            <label>11. Nama orang tua</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>pekerjaan</label>
+            <label>:</label>
+            <input type="checkbox">PNS/TNI/POLRI</input>
+            <input type="checkbox">SWASTA</input>
+            <input type="checkbox">WIRASWASTA</input>
+            <input type="checkbox">LAIN-LAIN</input>
+
+        </p>
+        <p>
+            <label>12. Asal sekolah</label>
+            <label>:</label>
+            <input type="text"/>
+        </p>
+        <p>
+            <label>status sekolah</label>
+            <label>:</label>
+            <input type="checkbox">NEGRI</input>
+            <input type="checkbox">SWASTA</input>
+            <input type="checkbox">LUAR NEGRI</input>
+        </p>
+        <p>
+            <label>jurusan</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>nomor ijazah</label>
+            <label>:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label>tanggal lulus</label>
+            <input type="date"/>
+        </p>
+</body>
+<p>catatan :*) beri tanda silang sesuai dengan pilihan(hanya satu pilihan)</p>
+<p style="text-align: right;">
+    <label>cirebon,</label>
+    <input type="date" name="tanggal" />
+    <p style="text-align: right;">
+        <input type="text" name="username" placeholder="masukan nama anda" />
+    </p>
+</p>
+<p>
+    <a bgcolor="blue" href="index_1.html" onclick="return confirm('anda yakin ingin mengirim?')" .>kirim</a
+
+</html>
