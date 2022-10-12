@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', sans-serif;
+    
+}
+
+.wadah-navigasi{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigasi{
+    position: fixed;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: rgb(186, 199, 198)222, 218);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 1s ease-in-out;
+    box-shadow:3px 3px 14px rgba(0,0,0.2);
+    z-index: 99;
+}
+
+.navigasi .wadah-navigasi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 1s ease-in-out;
+}
+
+.navigasi ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigasi a{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 1s ease-in-out;
+}
+
+.navigasi a:hover{
+    color: rgb(173, 21, 21);
+}
+
+.logo{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navigasi .aktif{
+    font-weight: bold;
+}
+
+.mana{
+    padding: 20px;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.sosmed{
+    text-decoration: none;
+}
+
+.wa{
+    color: #25d366;
+}
+
+.fb{
+    color: #0000ff;
+}
+
+.ig{
+    color: #405de6;
+}
+
+.yt{
+    color: #ff0000;
+}
+
+.rata{
+    text-align: center;
+}
